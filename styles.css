@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*$colorThemesub: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);*/
+/* === Common style for navbar === */
+/*--------------------------------*/
+.navbar {
+  box-shadow: 0 6px 6px 0 rgba(230, 227, 227, 0.5);
+  top: 0;
+}
+
+.navbar-collapse {
+  justify-content: right;
+}
+
+.navbar-collapse .navbar-nav {
+  gap: 30px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #8490ff;
+}
+
+.page-label {
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#home .content .name {
+  font-size: 3.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 20px 0;
+  line-height: 1.2em;
+}
+
+/* === Home page element style === */
+/*--------------------------------*/
+#home .row {
+  /*background-color: gray;*/
+  align-items: center;
+  padding: 50px 0;
+}
+
+#home .image {
+  /*background-color: #8490ff;*/
+  position: relative;
+}
+
+#frame {
+  max-width: 450px;
+}
+
+#home .image #profile {
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+}
+
+/* === Common styles === */
+/*--------------------------------*/
+.intro {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.page-btns {
+  background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  padding: 5px 20px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 600;
+  color: white;
+  margin: 20px 0;
+}
+
+main .top {
+  background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  text-align: center;
+  padding: 60px 0;
+  color: white;
+}
+
+.content-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 20px 0;
+  line-height: 1.2em;
+}
+
+/* === About Page Style === */
+/*--------------------------------*/
+#about .row {
+  align-items: center;
+  padding: 50px 0;
+}
+
+#about .row .image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+#about .row .content label {
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* === Skills Page Style === */
+/*--------------------------------*/
+#skills .row {
+  align-items: center;
+  padding: 50px 0;
+}
+
+#skills .row .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+#skills .progress {
+  height: 10px;
+}
+
+#skills .progress .progress-bar {
+  background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+}
+
+#skills .progress #vs-code {
+  width: 75%;
+}
+
+#skills .progress #git {
+  width: 65%;
+}
+
+#skills .progress #canva {
+  width: 40%;
+}
+
+#skills .progress #html {
+  width: 86%;
+}
+
+#skills .progress #css {
+  width: 80%;
+}
+
+#skills .progress #sass {
+  width: 75%;
+}
+
+#skills .progress #javascript {
+  width: 50%;
+}
+
+#skills .row .content label {
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* === Portfolio Page Style === */
+/*--------------------------------*/
+#portfolio .row {
+  padding: 50px 0;
+}
+
+#portfolio .row .card {
+  height: 300px;
+  border: none;
+  box-shadow: 2px 6px 6px 0 rgba(230, 227, 227, 0.5);
+}
+
+#portfolio .row .card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 70%;
+}
+
+/* === Services Page Style === */
+/*--------------------------------*/
+#services .row {
+  padding: 50px 0;
+}
+
+#services .row .services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+/* === Portfolio Page Style === */
+/*--------------------------------*/
+#contact .row {
+  padding: 50px 0;
+}
+
+#contact .row .details {
+  display: flex;
+  gap: 20px;
+}
+
+#contact .row .details .icon {
+  color: #8490ff;
+}
+
+@media screen and (max-width: 500px) {
+  /* === Home Page Style === */
+  /*--------------------------------*/
+  #frame {
+    max-width: 300px;
+  }
+  #home .image #profile {
+    max-width: 250px;
+    left: 20px;
+  }
+  #home .content .name {
+    font-size: 2.5rem;
+  }
+  /* === Skills Page Style === */
+  /*--------------------------------*/
+  #skills .row {
+    gap: 30px;
+  }
+  /* === Portfolio Page Style === */
+  /*--------------------------------*/
+  #portfolio .row {
+    gap: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
