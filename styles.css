@@ -214,7 +214,7 @@ main .top {
   gap: 10px;
 }
 
-/* === Portfolio Page Style === */
+/* === Contact Page Style === */
 /*--------------------------------*/
 #contact .row {
   padding: 50px 0;
@@ -227,6 +227,40 @@ main .top {
 
 #contact .row .details .icon {
   color: #8490ff;
+}
+
+#contact .bottom .details .text {
+  font-size: 13px;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  border-color: rgb(167, 164, 164);
+}
+
+.form-control::-moz-placeholder {
+  font-size: 13px;
+}
+
+.form-control::placeholder {
+  font-size: 13px;
+}
+
+form #submit {
+  float: right;
+}
+
+#contact .bottom .details .socialmedia ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  bottom: -20px;
 }
 
 @media screen and (max-width: 500px) {
@@ -251,5 +285,10 @@ main .top {
   /*--------------------------------*/
   #portfolio .row {
     gap: 20px;
+  }
+  /* === Contact Page Style === */
+  /*--------------------------------*/
+  #contact form .right #message {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */
