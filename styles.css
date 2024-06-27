@@ -10,7 +10,6 @@
 /*--------------------------------*/
 .navbar {
   box-shadow: 0 6px 6px 0 rgba(230, 227, 227, 0.5);
-  top: 0;
 }
 
 .navbar-collapse {
@@ -46,6 +45,16 @@
   line-height: 1.2em;
 }
 
+.container {
+  margin: 0 100px;
+}
+
+footer {
+  background-color: #6a59d1;
+  margin: 50px 0 0;
+  padding: 10px 0;
+}
+
 /* === Home page element style === */
 /*--------------------------------*/
 #home .row {
@@ -64,9 +73,20 @@
 }
 
 #home .image #profile {
-  position: absolute;
-  left: 60px;
-  bottom: 0;
+  max-width: 400px;
+}
+
+.content {
+  padding-right: 60px;
+}
+
+.home-socialmedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #6a59d1;
+  font-size: 1.8rem;
+  gap: 20px;
 }
 
 /* === Common styles === */
@@ -79,7 +99,7 @@
 }
 
 .page-btns {
-  background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  background-color: #6a59d1;
   padding: 5px 20px;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -90,7 +110,7 @@
 }
 
 main .top {
-  background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  background-color: #6a59d1;
   text-align: center;
   padding: 60px 0;
   color: white;
@@ -263,6 +283,14 @@ form #submit {
   bottom: -20px;
 }
 
+@media screen and (max-width: 800px) {
+  .container {
+    margin: 0;
+  }
+  .content {
+    padding-right: 5px;
+  }
+}
 @media screen and (max-width: 500px) {
   /* === Home Page Style === */
   /*--------------------------------*/
